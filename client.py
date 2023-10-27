@@ -25,7 +25,7 @@ name = input("Enter your name: ")
 def listen_for_messages():
     while True:
         message = s.recv(1024).decode()
-        print("\n" + message)
+        print("\n" + message + "\n")
 
 t = Thread(target=listen_for_messages)
 t.daemon = True
